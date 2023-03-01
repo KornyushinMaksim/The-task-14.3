@@ -59,14 +59,14 @@ void array_plus(I* arr, int si) {
     int index_plus = 0;
     for (size_t i = 0; i < si; i++)
     {
-        if (arr[i] == 0) {
+        if (arr[i] < 0) {
             index_plus++;
         }
     }
     I* plus = new I[index_plus];
     for (size_t i = 0; i < si; i++)
     {
-        if (arr[i] == 0) {
+        if (arr[i] < 0) {
             plus[i] = arr[i];
             cout << plus[i] << " | ";
         }
